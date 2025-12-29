@@ -1,0 +1,11 @@
+id = "cranberry-extension"
+name = "Cranberry"
+version = "0.0.1"
+schema_version = 1
+authors = ["creepersaur"]
+description = "Cranberry programming language support for Zed."
+repository = "https://github.com/creepersaur/zed-cranberry"
+
+[grammars.cranberry]
+repository = "https://github.com/creepersaur/tree-sitter-cranberry"
+commit = "f73107b7ca454025e979fb462b6a2c3fbfa70a58"

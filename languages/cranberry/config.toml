@@ -1,0 +1,4 @@
+name = "Cranberry"
+grammar = "cranberry"
+path_suffixes = ["cb"]
+line_comments = ["# "]
