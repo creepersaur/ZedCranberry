@@ -10,6 +10,8 @@
 (nil) @boolean
 (self) @type
 (print) @function
+(builtin_type) @type
+(constructor) @keyword
 (identifier) @variable
 (all_caps_identifier) @constant
 (escape_sequence) @string.escape
@@ -39,8 +41,6 @@
 	"=>"
 	"in"
 ] @keyword
-
-(constructor) @keyword
 
 (camel_case_identifier) @type
 

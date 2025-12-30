@@ -8,4 +8,8 @@ repository = "https://github.com/creepersaur/ZedCranberry"
 
 [grammars.cranberry]
 repository = "https://github.com/creepersaur/tree-sitter-cranberry"
-commit = "ba9827e59befab2be0a02bc483ad363731a539c7"
+commit = "d85bded77c6091a989954f01decb742ca8304a37"
+
+[language_servers.cranberry-lsp]
+name = "cranberry-lsp"
+languages = ["Cranberry"]

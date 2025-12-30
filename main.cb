@@ -1,0 +1,15 @@
+class Profile {
+	constructor(self, name) {
+		self.name = name
+		self.currency = 1500
+	}
+
+	fn destroy(self) {
+		println($"Destroying: {self.name}")
+	}
+}
+
+let username: String = "John Doe"
+let my_user = Profile(username)
+
+my_user.destroy()
