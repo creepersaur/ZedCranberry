@@ -1,6 +1,10 @@
 (comment) @comment
+
 (string) @string
-(interpolated_string_content) @string
+(interpolated_string_content_double) @string
+(interpolated_string_content_single) @string
+(interpolated_string_content_backtick) @string
+
 (number) @number
 (boolean) @boolean
 (nil) @boolean
