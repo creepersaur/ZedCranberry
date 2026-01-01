@@ -1,4 +1,4 @@
-use zed_extension_api::{lsp::Completion, process::Command, *};
+use zed_extension_api::{process::Command, *};
 
 #[allow(unused)]
 struct CranberryExtension;
@@ -13,7 +13,7 @@ impl Extension for CranberryExtension {
         _language_server_id: &LanguageServerId,
         _worktree: &Worktree,
     ) -> Result<zed_extension_api::Command, String> {
-        let lsp_binary = std::path::PathBuf::from("/Users/vivekmathur/cranberry-lsp/target/release/cranberry-lsp");
+        let lsp_binary = std::path::PathBuf::from("/Users/vivekmathur/cranberry-lsp/target/debug/cranberry-lsp");
 
         Ok(Command {
             command: lsp_binary.to_string_lossy().into(),

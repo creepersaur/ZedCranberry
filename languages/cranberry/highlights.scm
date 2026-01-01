@@ -17,9 +17,15 @@
 (escape_sequence) @string.escape
 
 "$" @constant
+"@" @keyword
 "\"" @string
 "'" @string
 "`" @string
+
+(decorator_statement
+	(identifier) @type)
+(decorator_statement
+	"@" @type)
 
 [
 	"let"
@@ -42,7 +48,7 @@
 	"in"
 ] @keyword
 
-(camel_case_identifier) @type
+(pascal_case_identifier) @type
 
 (function_declaration
   (snake_case_identifier) @function)
